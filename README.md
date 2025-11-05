@@ -28,7 +28,7 @@ Docker는 애플리케이션을 컨테이너라는 표준화된 단위로 패키
 
 ### Docker 설치
 ```
-# Doc~ker 엔진(docker.io) 설치
+# Docker 엔진(docker.io) 설치
 sudo apt install docker.io -y
 
 # 시스템 부팅 시 Docker 자동 실행 설정
@@ -58,7 +58,7 @@ docker --version
 ~$ docker images 
 
 # 전체 이미지 목록
-~$ docker images -a ~
+~$ docker images -a
 ```
 
 <br><br>
