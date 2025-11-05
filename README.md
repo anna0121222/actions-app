@@ -6,22 +6,22 @@ Docker는 애플리케이션을 컨테이너라는 표준화된 단위로 패키
 <br><br>
 
 ### Docker 주요 개념
-<li><strong>Image</strong>
+<ul><li><strong>Image</strong>
 <br>: 컨테이너를 만들기 위한 실행 환경의 설계도이다.
 코드, 라이브러리, 설정 등이 모두 포함되어 있어 이 이미지를 기반으로 언제든 컨테이너를 만들 수 있다.
-</li>
+</li></ul>
 <br>
 
-<li><strong>Container</strong>
+<ul><li><strong>Container</strong>
 <br>: 이미지를 실제로 실행한 실행 단위이다.
 여러 개의 컨테이너가 동시에 실행될 수 있다.
-</li>
+</li></ul>
 <br>
 
-<li><strong>Dockerfile</strong>
+<ul><li><strong>Dockerfile</strong>
 <br>: 이미지를 자동으로 빌드하기 위한 명령어 모음 파일이다.
 어떤 환경을 사용할지, 어떤 명령을 실행할지 등을 정의한다.
-</li>
+</li></ul>
 <br><br>
 
 
@@ -65,28 +65,28 @@ docker --version
 
 
 ### CI/CD
-<li><strong>CI(지속적 통합)</strong>
+<ul><li><strong>CI(지속적 통합)</strong>
 <br>: 여러 개발자가 작성한 코드를 자동으로 빌드·테스트하여 통합하는 과정이다.
-</li>
+</li></ul>
 <br>
-<li><strong>CD(지속적 배포)</strong>
+<ul><li><strong>CD(지속적 배포)</strong>
 <br>: 테스트를 통과한 애플리케이션을 자동으로 서버에 배포하는 과정이다.
 
 ```
 CI/CD는 개발자가 코드를 Push하면 자동으로
 빌드(Build) → 테스트(Test) → 배포(Deploy)가 진행되도록 해준다.
 ```
-</li>
+</li></ul>
 <br><br>
 
 
 
 ### GitHub Secrets 설정
-<li>보안이 필요한 정보(IP, 계정, 비밀키 등)는 코드에 직접 쓰지 않고 GitHub Secrets에 암호화해 저장한다.
-</li>
+<ul><li>보안이 필요한 정보(IP, 계정, 비밀키 등)는 코드에 직접 쓰지 않고 GitHub Secrets에 암호화해 저장한다.
+</li></ul>
 <br>
 
-<li>예시구조
+<ul><li>예시구조
 <br>
 
 | 이름 | 설명 | 예시 |
@@ -95,7 +95,7 @@ CI/CD는 개발자가 코드를 Push하면 자동으로
 | `EC2_USER` | 서버 접속 계정 | `ubuntu` |
 | `EC2_KEY` | SSH 비밀키 | `-----BEGIN RSA PRIVATE KEY-----` |
 
-</li>
+</li></ul>
 <br><br>
 
 
@@ -118,6 +118,12 @@ GitHub Actions는 CI/CD를 자동화하는 GitHub 내장 도구이다.
 모든 민감 정보는 ${{ secrets.변수명 }} 형식으로 .yml 파일 내부에서 참조한다.
 코드에 직접 키를 작성하지 않아도 GitHub Actions 실행 시 자동으로 값이 주입된다.
 </span>
+<br><br>
+
+---
+
+### CD/CI 워크플로우 단계
+<img alt="CD/CI 워크플로우 단계" src="https://github.com/user-attachments/assets/132bb760-4fdd-4770-b304-a7f6bcc69a16" />
 <br><br>
 
 <p align="right"><a href="#top">⬆️ 처음으로</a></p>
