@@ -126,4 +126,4 @@ GitHub Actions는 CI/CD를 자동화하는 GitHub 내장 도구이다.
 <img alt="CD/CI 워크플로우 단계" src="https://github.com/user-attachments/assets/132bb760-4fdd-4770-b304-a7f6bcc69a16" />
 <br><br>
 
-<p align="right"><a href="#코리아 IT 아카데미 국비과정">⬆️ 처음으로</a></p>
+<p align="right"><a href="#코리아-IT-아카데미-국비과정">⬆️ 처음으로</a></p>
